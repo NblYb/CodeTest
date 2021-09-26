@@ -1,9 +1,11 @@
 package codingtest.main.pojo;
 
 import com.opencsv.bean.CsvBindByPosition;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
+@AllArgsConstructor
 public class Record {
     @CsvBindByPosition(position = 0)
     public String ID;
