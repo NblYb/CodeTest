@@ -15,3 +15,9 @@ If there isn't a matching record, the status of the journey is **INCOMPLETE**.
 If the raw data is too big to be put in a single hashtable, the raw data can be divided into smaller files based on PAN+BusId+CompanyId prior to calculation, so the size of file won't exceed the limitation of memory.
 ### Non-sorted data
 if the raw data is not sorted by the tap-on time, the sorting can be done after dividing the data into different PAN+BusId+CompanyId groups. The time complexity will be O(nLog(n/m)), where **n** is the number of records, and **m** is the number of groups.
+## How to run the application
+* Navigate the the root folder under the command line
+* Run the command to build the whole project: 
+* **mvn package**
+* Then run jar file using command
+* **java -cp target/LittlePay-CodeTest-1.0-SNAPSHOT.jar codingtest.main.TestApplication**
